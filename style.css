@@ -1,59 +1,40 @@
 body {
-  background-color: #f5f0e8;
+  background-color: #efebe5;
 }
 
-.custom-navbar {
-  background-color: #3b2a1a;
+.navbar-custom {
+  background-color: #3a2516;
 }
 
-.navbar .nav-link {
-  color: #ddd !important;
+.hero {
+  min-height: 430px;
+  background: url("./img/fejlec_vagott.png") center/cover no-repeat;
 }
 
-.navbar .nav-link.active {
-  color: #2e86c1 !important;
-  font-weight: bold;
+.hero-panel {
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 70%;
+  margin-left: 0;
+  text-align: center;
 }
 
-h1 {
-  font-weight: 600;
+.section-card {
+  border: 1px solid #b89072;
+  background-color: #e8ddd3;
 }
 
-.custom-table {
-  border: 1px solid #e8ddd0;
-  background-color: #fff;
+.section-card .card-title {
+  color: #0d6efd;
 }
 
-.custom-table thead {
-  background-color: #3b2a1a;
-  color: white;
+.table thead th {
+  background-color: #3a2516;
+  color: #8dc5ff;
+  font-weight: 700;
 }
 
-.custom-table tbody tr:hover {
-  background-color: #fdf6ed;
-}
-
-.btn-danger {
-  background-color: #e74c3c;
-  border: none;
-}
-
-.btn-danger:hover {
-  background-color: #c0392b;
-}
-
-.custom-note {
-  background-color: #d6eaf8;
-  color: #1a5276;
-  border: 1px solid #aed6f1;
-}
-
-.custom-save-btn {
-  background-color: #2e86c1;
-  border: none;
-  font-weight: 500;
-}
-
-.custom-save-btn:hover {
-  background-color: #21618c;
+.table tbody td {
+  background-color: #d9d5cf;
 }

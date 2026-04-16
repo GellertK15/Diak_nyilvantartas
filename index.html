@@ -1,76 +1,71 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diáknyilvántartó</title>
+    <title>Diáknyilvántartó rendszer</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <header class="hero d-flex align-items-center">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Diáknyilvántartó</a>
+        <div class="hero-panel text-white p-4">
+          <h1 class="fw-bold mb-1">Diáknyilvántartó rendszer</h1>
+          <p class="mb-4">
+            Reszponzív weboldal <em>(offline Bootstrap, saját CSS)</em>
+          </p>
 
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Kezdőlap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="lista.html">Diákok listája</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="uj.html">Új diák</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="modositas.html">Módosítás</a>
-            </li>
-          </ul>
+          <a href="lista.html" class="btn btn-light me-2 mb-2"
+            >Diákok listája</a
+          >
+          <a href="ujhtml.html" class="btn btn-outline-light mb-2"
+            >Új diák felvétele</a
+          >
         </div>
       </div>
-    </nav>
+    </header>
 
-    <div class="hero-section text-white d-flex align-items-center">
-      <div class="container text-center">
-        <div class="hero-box p-4">
-          <h1>Diáknyilvántartó rendszer</h1>
-          <p>Reszponzív weboldal (offline Bootstrap, saját CSS)</p>
-          <a href="lista.html" class="btn btn-light me-2">Diákok listája</a>
-          <a href="uj.html" class="btn btn-outline-light">Új diák felvétele</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5">
+    <main class="container py-5">
       <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card custom-card p-3">
-            <h5>Lista</h5>
-            <p>A diákok listájának táblázatos megjelenítése.</p>
-            <a href="lista.html" class="btn btn-primary btn-sm">Megnyitás</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card section-card h-100">
+            <div class="card-body">
+              <h2 class="card-title h3">Lista</h2>
+              <p class="card-text text-secondary">
+                A diákok listájának táblázatos megjelenítése.
+              </p>
+              <a href="lista.html" class="btn btn-primary">Megnyitás</a>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card custom-card p-3">
-            <h5>Új diák</h5>
-            <p>Reszponzív űrlap (DEMO mentés).</p>
-            <a href="uj.html" class="btn btn-primary btn-sm">Megnyitás</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card section-card h-100">
+            <div class="card-body">
+              <h2 class="card-title h3">Új diák</h2>
+              <p class="card-text text-secondary">
+                Reszponzív űrlap (DEMO mentés).
+              </p>
+              <a href="ujhtml.html" class="btn btn-primary">Megnyitás</a>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card custom-card p-3">
-            <h5>Módosítás</h5>
-            <p>Reszponzív osztály-módosítás felület (DEMO).</p>
-            <a href="modositas.html" class="btn btn-primary btn-sm"
-              >Megnyitás</a
-            >
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card section-card h-100">
+            <div class="card-body">
+              <h2 class="card-title h3">Módosítás</h2>
+              <p class="card-text text-secondary">
+                Reszponzív osztály-módosítás felület (DEMO).
+              </p>
+              <a href="modositas.html" class="btn btn-primary">Megnyitás</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
   </body>
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
 </html>

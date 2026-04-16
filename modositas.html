@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,90 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Diáknyilvántartó</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Navigáció váltása"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lista.html">Diákok listája</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ujhtml.html">Új diák</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="modositas.html"
+                >Módosítás</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <h1 class="display-5 fw-normal mb-1">Osztály módosítása</h1>
+      <p class="text-secondary mb-4">
+        1. feladat: reszponzív felület + DEMO mentés (adatbázis nélkül)
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="p-2">
+            <div class="mb-3">
+              <label class="form-label">Diák kiválasztása</label>
+              <select class="form-select">
+                <option selected disabled>Válasszon...</option>
+                <option>Kovács Anna</option>
+                <option>Nagy Péter</option>
+                <option>Tóth Eszter</option>
+                <option>Szabó Bence</option>
+                <option>Varga Réka</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Új osztály</label>
+              <select class="form-select">
+                <option selected disabled>Válasszon osztályt...</option>
+                <option>9A</option>
+                <option>9B</option>
+                <option>10A</option>
+                <option>10B</option>
+                <option>11A</option>
+                <option>11B</option>
+                <option>12A</option>
+                <option>12B</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary w-100">Mentés</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info mt-4" role="alert">
+        <strong>Megjegyzés:</strong> Ebben a külön feladatban a módosítás DEMO
+        (nem kerül adatbázisba).
+      </div>
+    </main>
+
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
